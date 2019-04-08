@@ -1,0 +1,23 @@
+<p>&nbsp;</p>
+<h3>List of all available courses</h3>
+<p>&nbsp;</p>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Course Id</th>
+            <th>Code</th>
+            <th>Section and Instance</th>
+            <th>Enrolled</th>
+            <th>Professor</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor='let a of courses'>
+            <td>{{ a.courseId }}</td>
+            <td>{{ a.courseCode }}</td>
+            <td>{{ a.section }} - {{ a.termSectionId }}</td>
+            <td>{{ a.enrolTotal }}</td>
+            <td>{{ a.professor }}</td>
+        </tr>
+    </tbody>
+</table>
